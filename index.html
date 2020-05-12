@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vera Krutsina Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <!-- change this link when you decide on a new font and don't forget to change the CSS file.-->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#home" ><img src="images/logo-03.png" alt="" /></a>
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">my tech</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">about me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">my work</a>
+          </li>
+        <li class="nav__item">
+            <a href="#sayhi" class="nav__link">say hi</a>
+        </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        hi, I'm <strong>vera krutsina</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        software developer
+      </p>
+      <img src="images/me.jpg" alt="a picture of me" class="intro__img" />
+    </section>
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">
+        some technologies I work with
+      </h2>
+      <div class="services">
+        <div class="service">
+          <!-- <h3>Frontend</h3> -->
+          <ul class="services__list">
+            <li>React</li>
+            <li>Redux</li>
+            <li>React Native</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+        <!-- / service -->
+
+        <div class="service">
+          <!-- <h3>Backend</h3> -->
+          <ul class="services__list">
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Sequelize</li>
+            <li>Postgres</li>
+            <li>Firestore</li>
+          </ul>
+        </div>
+        <!-- / service -->
+
+        <div class="service">
+          <!-- <h3>Other</h3> -->
+          <ul class="services__list">
+            <li>ES6</li>
+            <li>PHP</li>
+            <li>Wordpress</li>
+          </ul>
+        </div>
+        <!-- / service -->
+      </div>
+      <!-- / services -->
+
+      <!-- <a href="#work" class="btn">My Work</a> -->
+    </section>
+
+    <!-- About Me-->
+
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">about me</h2>
+      <p class="section__subtitle section__subtitle--about">
+        software developer based in san francisco
+      </p>
+
+      <div class="about-me__body">
+        <p>
+            Hi, I’m Vera! I am a full-stack software engineer that is passionate about using
+            tech to augment and ease the day to day experience. I love
+            collaborating, learning from others, and working in teams that are
+            passionate and enthusiastic.
+        </p>
+        <p>
+        When I’m not developing, you can find me reading, cooking,
+        traveling, or playing with my dog Mimo. I am always happy to
+        connect and chat!
+        </p>
+      </div>
+      <img src="images/sf-04.jpg" alt="" class="about-me__img" />
+    </section>
+
+    <!--My Work-->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">my work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        a selection of my work
+      </p>
+
+      <div class="portfolio">
+                <!-- Portfolio MH -->
+                <a href="portfolio-mh.html" class="portfolio__item">
+                    <img src="images/mh.jpg" alt="receipt" class="portfolio__img" />
+                </a>
+        <!-- Portfolio Splice -->
+        <a href="portfolio-splice.html" class="portfolio__item">
+          <img
+            src="images/receipt.jpg"
+            alt="calculator"
+            class="portfolio__img"
+          />
+        </a>
+        <!-- Portfolio Ecommece-->
+        <a href="portfolio-ecommerce.html" class="portfolio__item">
+          <img
+            src="images/ecommerce.jpg"
+            alt="receipt"
+            class="portfolio__img"
+          />
+        </a>
+            <!-- Portfolio Matthew -->
+            <a href="portfolio-matthew.html" class="portfolio__item">
+                <img src="images/calculator-02.jpg" alt="e-commerce" class="portfolio__img" />
+            </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="sayhi">
+
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/vera-krutsina/"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+<li class="social-list__item">
+    <a class="social-list__link" href="mailto:vera.krutsina@gmail.com"><i class="far fa-envelope"></i></i></a>
+</li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/vkrutsina"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
