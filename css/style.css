@@ -301,7 +301,7 @@ image ever fails, we have a 'backup' */
   background-position: right top;
   background-blend-mode: multiply;
   background-size: cover;
-  height: 325px;
+
   color: var(--clr-text);
   text-align: center;
 }
