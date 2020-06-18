@@ -152,7 +152,7 @@ header {
   position: fixed;
   background: var(--clr-yellow);
   color: var(--clr-text);
-  opacity: 0.85;
+  opacity: 0.95;
   top: 0;
   bottom: 0;
   left: 0;
@@ -296,10 +296,12 @@ header {
 /* it is nice to have background color first in case the background 
 image ever fails, we have a 'backup' */
 .my-services {
-  background-color: var(--clr-yellow);
-  background-image: url('../images/yellowcup.jpg');
-  background-position: 50% 87%;
+  background-color: var(--clr-bg);
+  background-image: url('../images/olena-sergienko-cHlK4sZXOQo-unsplash.jpg');
+  background-position: right top;
+  background-blend-mode: multiply;
   background-size: cover;
+  height: 325px;
   color: var(--clr-text);
   text-align: center;
 }
@@ -312,7 +314,7 @@ image ever fails, we have a 'backup' */
 .section__title--services::after {
   content: '';
   display: block;
-  width: 15%;
+  width: 10%;
   height: 1px;
   margin: 0.5em auto 1em;
   background: var(--clr-text);
@@ -322,10 +324,8 @@ image ever fails, we have a 'backup' */
 .services {
   margin-bottom: 2em;
   font-family: var(--ff-secondary);
-}
-
-.services__list {
-  list-style: none;
+  font-weight: 900;
+  color: black;
 }
 
 .service {
@@ -333,12 +333,11 @@ image ever fails, we have a 'backup' */
   margin: 0 auto;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .services {
     display: flex;
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 
   /* the plus is looking for a sibling. if there is one,
@@ -395,7 +394,7 @@ image ever fails, we have a 'backup' */
     z-index: 2;
   }
 }
-
+/* My Work */
 .my-work {
   background-color: var(--clr-text);
   color: var(--clr-opaqueyellow);
@@ -411,12 +410,11 @@ image ever fails, we have a 'backup' */
 .portfolio {
   display: grid;
   /* you can also do repeat(2, 1fr) or chnage those... */
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .portfolio__item {
   overflow: hidden;
-  margin: 0.15em;
 }
 
 .portfolio__img {
