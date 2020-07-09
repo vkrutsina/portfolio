@@ -20,6 +20,8 @@
   --clr-toupe: #7c616c;
   --clr-yellow: #fadf63;
   --clr-opaqueyellow: #fff;
+  --clr-bone: #white;
+  --clr-linen: #f6eee5;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -64,25 +66,6 @@ section {
 strong {
   font-weight: var(--fw-bold);
 }
-
-/* .btn {
-  display: inline-block;
-  padding: 0.5em 2.5em;
-  background: var(--clr-accent);
-  color: var(--clr-text);
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 0.8rem;
-  text-transform: 2px;
-  font-weight: var(--fw-bold);
-  transition: transform 200ms ease-in-out;
-}
-
-.btn:hover {
-  transform: scale(1.2);
-  outline: 3px solid var(--clr-accent);
-  outline-offset: 3px;
-} */
 
 img {
   display: block;
@@ -130,6 +113,7 @@ h3 {
 .section__subtitle--intro,
 .section__subtitle--about {
   background: var(--clr-yellow);
+
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
   color: var(--clr-text);
