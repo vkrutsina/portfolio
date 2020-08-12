@@ -5,7 +5,6 @@
 }
 
 /* custom properties below */
-/* make sure to change these when you change the font of your app*/
 :root {
   --ff-primary: 'DM Serif Text', serif;
   --ff-secondary: 'Roboto Slab', serif;
