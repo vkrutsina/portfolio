@@ -179,23 +179,26 @@ header {
   right: 1em;
   top: 1em;
   z-index: 1000;
+  outline: none;
 }
 
 .nav-open .nav {
   transform: translateX(0);
+  outline: none;
 }
 
 .nav-open .nav-toggle {
   position: fixed;
+  outline: none;
 }
 
 .nav-open .hamburger {
   transform: rotate(0.625turn);
+  outline: none;
 }
 
 .nav-open .hamburger::before {
   transform: rotate(90deg) translateX(-6px);
-  background: var(--clr-yellow);
 }
 
 .nav-open .hamburger::after {
