@@ -414,8 +414,9 @@ image ever fails, we have a 'backup' */
 
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
-  transform: scale(1.2);
+  transform: scale(1.1);
   opacity: 0.6;
+  overflow: hidden;
 }
 
 /* footer */
