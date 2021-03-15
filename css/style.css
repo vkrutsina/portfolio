@@ -7,7 +7,7 @@
 /* custom properties below */
 :root {
   --ff-primary: 'DM Serif Text', serif;
-  --ff-secondary: 'Roboto Slab', serif;
+  --ff-secondary: 'Montserrat', serif;
   --ffw-reg: 300;
   --fw-bold: 900;
 
@@ -107,12 +107,13 @@ h3 {
 .section__subtitle {
   margin: 0;
   font-size: var(--fs-h3);
+  font-weight: 600;
 }
 
 .section__subtitle--intro,
 .section__subtitle--about {
   background: var(--clr-yellow);
-
+  border-radius: 5px;
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
   color: var(--clr-text);
@@ -289,11 +290,14 @@ image ever fails, we have a 'backup' */
   background-size: cover;
   color: var(--clr-text);
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .section__title--services {
   color: white;
   position: relative;
+  justify-content: center;
 }
 
 .section__title--services::after {
@@ -311,11 +315,14 @@ image ever fails, we have a 'backup' */
   font-family: var(--ff-secondary);
   z-index: 2;
   color: var(--clr-bg);
+  display: flex;
+  justify-content: space-between;
 }
 
 .service {
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 200px;
+  /* margin: 0 auto; */
+  width: 30%;
 }
 
 @media (min-width: 1000px) {
@@ -365,6 +372,7 @@ image ever fails, we have a 'backup' */
 
   .section__subtitle--about {
     grid-column: 1 / -1;
+    /* font-size: 1.5rem; */
     grid-row: 2;
     position: relative;
     left: -2em;
@@ -404,6 +412,10 @@ image ever fails, we have a 'backup' */
 
 .portfolio__img {
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+}
+
+.portfolio__img__jop {
+  object-fit: cover;
 }
 
 .portfolio__item:focus {
