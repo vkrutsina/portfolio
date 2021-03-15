@@ -11,8 +11,6 @@
   --ffw-reg: 300;
   --fw-bold: 900;
 
-  /* color background and text -- you cant add new colors and change them 
-  as you please!  */
   --clr-bg: #fff8d6;
   --clr-text: #303030;
 
@@ -24,16 +22,14 @@
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
-  --fs-h3: 1.25rem;
+  --fs-h3: 1rem;
   --fs-body: 1rem;
 
-  /* see how you can great multiple layers with shodows.. maybe dif colors?
-  */
+
   --box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.15);
 }
 
-/* this will change the text size when the screen is adjusted... 
-look into this more to understand fully! */
+
 @media (min-width: 800px) {
   :root {
     --fs-h1: 4.5rem;
@@ -107,7 +103,7 @@ h3 {
 .section__subtitle {
   margin: 0;
   font-size: var(--fs-h3);
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .section__subtitle--intro,
@@ -118,6 +114,16 @@ h3 {
   font-family: var(--ff-secondary);
   color: var(--clr-text);
   margin-bottom: 1em;
+}
+
+.section__title--work {
+  background-image: linear-gradient(60deg, white, #fadf63);
+  background-size: 100%; 
+  background-repeat: repeat; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;;
 }
 
 /* Header */
@@ -280,8 +286,6 @@ header {
   }
 }
 
-/* it is nice to have background color first in case the background 
-image ever fails, we have a 'backup' */
 .my-services {
   background-color: var(--clr-bg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -304,7 +308,7 @@ image ever fails, we have a 'backup' */
   content: '';
   display: block;
   width: 10%;
-  height: 1px;
+  height: 1.5px;
   margin: 0.5em auto 1em;
   background: var(--clr-text);
   opacity: 0.3;
@@ -316,12 +320,15 @@ image ever fails, we have a 'backup' */
   z-index: 2;
   color: var(--clr-bg);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  width: 70%;
+}
+
+.services__list {
+  list-style-type: none;
 }
 
 .service {
-  max-width: 200px;
-  /* margin: 0 auto; */
   width: 30%;
 }
 
@@ -332,8 +339,7 @@ image ever fails, we have a 'backup' */
     margin: 0 auto;
   }
 
-  /* the plus is looking for a sibling. if there is one,
-  it will add the margin to the left... */
+
   .service + .service {
     margin-left: 2em;
   }
@@ -394,20 +400,26 @@ image ever fails, we have a 'backup' */
   text-align: center;
 }
 
-.section__subtitle--work {
-  color: var(--clr-yellow);
-  font-weight: var(--fw-bold);
-  margin-bottom: 2em;
-}
 
 .portfolio {
-  display: grid;
-  /* you can also do repeat(2, 1fr) or chnage those... */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .portfolio__item {
   overflow: hidden;
+  object-fit: cover;
+  max-width: 300px;
+  max-height: 300px;
+  margin: .25em;
+  margin-top: .5em;
+}
+
+.portfolio__item-jop {
+  background-color: white;
+  height: 200px;
 }
 
 .portfolio__img {
