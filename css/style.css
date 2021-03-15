@@ -110,13 +110,15 @@ h3 {
 .section__subtitle--about {
   background: var(--clr-yellow);
   border-radius: 5px;
-  padding: 0.25em 1em;
+  padding: .25em 1em;
   font-family: var(--ff-secondary);
   color: var(--clr-text);
   margin-bottom: 1em;
 }
 
 .section__title--work {
+  background-color: white; 
+  padding: .12em;
   background-image: linear-gradient(60deg, white, #fadf63);
   background-size: 100%; 
   background-repeat: repeat; 
@@ -398,6 +400,8 @@ header {
   background-color: var(--clr-text);
   color: var(--clr-opaqueyellow);
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -406,6 +410,7 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .portfolio__item {
@@ -419,7 +424,6 @@ header {
 
 .portfolio__item-jop {
   background-color: white;
-  height: 200px;
 }
 
 .portfolio__img {
@@ -442,6 +446,10 @@ header {
   overflow: hidden;
 }
 
+@media (min-width: 600px) { 
+
+}
+
 /* footer */
 
 .footer {
@@ -449,7 +457,7 @@ header {
   color: var(--clr-yellow);
   text-align: center;
   justify-items: center;
-  padding: 2.5em 0;
+  padding: 1em 0 1.5em 0;
   font-size: var(--fs-h3);
 }
 
@@ -476,7 +484,6 @@ header {
   text-decoration: underline;
 }
 
-/* LIST STYEL NONE TO GET RID OF BULLETS FOR THE TECHNOLOGIES PART*/
 .social-list {
   list-style: none;
   display: flex;
