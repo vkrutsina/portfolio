@@ -98,6 +98,7 @@ h3 {
 
 .section__title--intro strong {
   display: block;
+  color: #303030;
 }
 
 .section__subtitle {
@@ -125,7 +126,7 @@ h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   -moz-background-clip: text;
-  -moz-text-fill-color: transparent;;
+  -moz-text-fill-color: transparent;
 }
 
 /* Header */
